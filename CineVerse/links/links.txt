@@ -1,0 +1,1 @@
+carrusel de fotos: https://www.migueltroyano.com/css/crear-un-carrusel-automatico-en-html-y-css-sin-javascript/
