@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStyles/css/styles.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <title>Log In: CineVerse</title>
+</head>
+<body>
+    <div id="logodiv">
+        <a href="index.html"><img id="logo" src="images/icon.png" ></a>
+    </div>   
+
+    <h1>Hasi Saioa</h1>
+
+    <form class="card" onsubmit="return logIn(event)">
+        <center>
+            <p>Erabiltzailea:</p>
+            <div>
+                <img id="userIMG" src="loginStyles/img/user.png" alt="Usuario">
+                <input id="user" type="text" required placeholder="Erabiltzailea">
+            </div>
+            <p>Pasahitza:</p>
+            <div>
+                <img id="contraIMG" src="loginStyles/img/pswd.png" alt="Contraseña">
+                <input type="password" id="password" minlength="8" maxlength="30" required placeholder="Pasahitza">
+            </div>
+            <br />
+            <br />
+            <button onmouseover="this.style.backgroundColor='green'" 
+                    onmouseout="this.style.backgroundColor='#004aad'" 
+                    class="button" type="submit">Sartu</button>
+        </center>
+        <br>
+    </form>
+    <br>
+    <div class="container medium">
+					<div class="col-12">
+							<hr />
+							<p style="color: white;">@CineVerse Sare Sozial guztietan: YouTube, Instagram eta X-en.</p>
+							<hr />
+					</div>
+				</div>
+    <footer>
+        <p>&copy; 2025 CineVerse Inc. All rights reserved.</p>
+    </footer>
+    <script src="loginStyles/js/login.js"></script>
+</body>
+</html>
