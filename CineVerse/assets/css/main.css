@@ -2042,7 +2042,7 @@ input, select, textarea {
     width: 100%;
     z-index: 10000;
     cursor: default;
-    height: 5em;
+    height: 7em;
 
     display: flex;                
     align-items: center;           
@@ -2051,7 +2051,7 @@ input, select, textarea {
 }
 
 #logomenu {
-    height: 3.5em;       
+    height: 5em;       
     width: auto;
 }
 #logoLogin{
@@ -2090,9 +2090,9 @@ input, select, textarea {
 			padding: 0 1.25em;
 		}
 
-			#nav a:hover {
-				color: #fff !important;
-				background: #e4e1e1;
+			#nav ul a:hover {
+				color: #004aad !important;
+				background: #ffffff;
 			}
 
 			#nav a.active {
@@ -2457,42 +2457,34 @@ input, select, textarea {
 
 	}
 /* CARRUSEL DE FOTOS */
-
-#carrusel-contenido {
-  width: 100%;
-  height: 100%;
+#myCarousel {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
-#carrusel-caja {
-  display: flex;
-  width: 100%;
-  animation: mover-carrusel 30s infinite;
+.carousel-inner > .item > img {
+  display: block;
+  max-height: 600px;
+  width: auto;
+  max-width: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+.spotify-button {
+    background-color: #1DB954;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
 
-.carrusel-elemento {
-  width: 33.3333%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagenes {
-  width: 100%;
-  height: auto;
-}
-
-@keyframes mover-carrusel {
-  0% {
-    transform: translateX(0);
-  }
-  33.3333% {
-    transform: translateX(-33.3333%);
-  }
-  66.6666% {
-    transform: translateX(-66.6666%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.spotify-button:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
 }

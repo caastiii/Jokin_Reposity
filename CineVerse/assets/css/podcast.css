@@ -1,0 +1,11 @@
+#podcast .box.style2 .image.featured img,
+#podcast .box.style2 img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 10px;
+}
+
+#podcast .box.style2 .image.featured:hover img,
+#podcast .box.style2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}

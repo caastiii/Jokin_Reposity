@@ -1,0 +1,75 @@
+.genre-gallery {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 0;
+    perspective: 1000px;
+}
+
+.genre-gallery::-webkit-scrollbar {
+    height: 10px;
+}
+
+.genre-gallery::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.genre-card {
+    flex: 0 0 250px;
+    background: #1e1e1e;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    padding-bottom: 20px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.genre-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    margin-top: -30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: transform 0.4s;
+}
+
+.genre-card h3 {
+    margin: 15px 0 10px 0;
+    font-size: 1.3em;
+}
+
+.genre-card p {
+    font-size: 0.9em;
+    padding: 0 10px;
+}
+
+.genre-card:hover {
+    transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+.genre-card:hover img {
+    transform: scale(1.1);
+}
+.box.style2 {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.box.style2 .image.featured img {
+    transition: transform 0.5s ease;
+}
+
+.box.style2:hover {
+    transform: translateY(-5px);
+}
+
+.box.style2:hover .image.featured img {
+    transform: scale(1.1);
+}
